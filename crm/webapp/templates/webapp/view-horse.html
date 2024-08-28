@@ -1,0 +1,39 @@
+{% extends 'webapp/base.html' %} {% block content %}
+
+<div class="card text-center" style="width: 80rem;">
+  <div class="card-body">
+    <h1 class="card-title">{{horse.name}}</h1>
+    <p class="large-text"> <strong> Owner:  </strong> {{horse.name|upper}}  </p>
+    <p class="card-text"> <strong>Phone: </strong> {{horse.phone}}</p>
+    <p class="card-text"> <strong>Address: </strong> {{horse.address}}, {{horse.city}}, {{horse.state}}, {{horse.country}}</p>
+    &nbsp; 
+    <p class="text-muted">Colic Information</p>
+    <p class="card-text"> <strong>Surgery (y/n): </strong> {{horse.surgery}}</p>
+    <p class="card-text"> <strong>Horse Age: </strong> {{horse.age}}</p>
+    <p class="card-text"> <strong>Rectal Temp: </strong> {{horse.rectal_temp}}</p>
+
+    <p class="card-text"> <strong>Pulse: </strong> {{horse.pulse}}</p>
+    <p class="card-text"> <strong>Respiratory Rate: </strong> {{horse.respiratory_rate}}</p>
+    <p class="card-text"> <strong>Temp of Extremities: </strong> {{horse.temp_of_extremities}}</p>
+    <p class="card-text"> <strong>Perhiperal Pulse: </strong> {{horse.peripheral_pulse}}</p>
+    <p class="card-text"> <strong>Mucous Membrane: </strong> {{horse.mucous_membrane}}</p>
+    <p class="card-text"> <strong>Capillary Refill Time: </strong> {{horse.capillary_refill_time}}</p>
+    <p class="card-text"> <strong>Pain: </strong> {{horse.pain}}</p>
+    <p class="card-text"> <strong>Peristalsis: </strong> {{horse.peristalsis}}</p>
+    <p class="card-text"> <strong>Abdominal Distention </strong> {{horse.abdominal_distention}}</p>
+    <p class="card-text"> <strong>Packed Cell Volume: </strong> {{horse.packed_cell_volume}}</p>
+    <p class="card-text"> <strong>Total Protein: </strong> {{horse.total_protein}}</p>
+    <p class="card-text"> <strong>Surgical lesion (y/n): </strong> {{horse.surgical_esion}}</p>
+    <p class="card-text"> <strong>Lesion 1 (y/n) </strong> {{horse.lesion_1}}</p>
+    <p class="card-text"> <strong>Lesion 2 (y/n) </strong> {{horse.lesion_2}}</p>
+  
+     
+
+    <p> <a href="{% url 'dashboard' %}" class="btn btn-secondary">Go back</a> &nbsp;  <a href="{% url 'update-horse' horse.id %}" class="btn btn-info">Edit</a> &nbsp; <a href="{% url 'delete' horse.id %}" class="btn btn-danger">Delete</a> </p>
+    <div class="card-footer">
+      <small class="text-muted"> Account Created On: {{horse.creation_date}}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
