@@ -25,7 +25,7 @@ class CreateClientForm(forms.ModelForm):
         fields = ['name', 'owner', 'phone', 'address', 'city', 'state', 'country', 
                   'surgery', 'age',	'rectal_temp', 'pulse', 'respiratory_rate', 'temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time',
                   'pain', 'peristalsis', 'abdominal_distention', 'packed_cell_volume', 'total_protein',
-                  'surgical_lesion', 'lesion_1', 'lesion_2', ]
+                  'surgical_lesion', 'lesion_1', 'lesion_2', 'predictions']
                 #fields = #['first_name', 'last_name', 'phone', 'email', 'address', 'city', 'state', 'country']
 
 
@@ -36,4 +36,4 @@ class UpdateClientForm(forms.ModelForm):
         fields = ['name', 'owner', 'phone', 'address', 'city', 'state', 'country',
                   'surgery', 'age',	'rectal_temp', 'pulse', 'respiratory_rate', 'temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time',
                    'pain', 'peristalsis', 'abdominal_distention', 'packed_cell_volume', 'total_protein',
-                  'surgical_lesion', 'lesion_1', 'lesion_2', ]
+                  'surgical_lesion', 'lesion_1', 'lesion_2', 'predictions']
