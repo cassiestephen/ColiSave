@@ -1,6 +1,6 @@
 # ColiSave
 ColiSave is a CRUD web application created using Django for managing and storing information about horses that have experienced colic. It is intended for use in a veterinary clinic. 
-The app is complete with a Machine Learning Model that predicts the outocome of a colic episode with ~80% accuracy.
+The app is complete with a Machine Learning Model that predicts the outcome of a colic episode with ~80% accuracy.
 
 # Features
 The user begins in a Home Page and can navigate through different pages using a Navigation Bar. 
