@@ -1,5 +1,5 @@
-# ColicMaster
-Colic Master is a CRUD web application created using Django for managing and storing information about horses that have experienced colic. It is intended for use in a veterinary clinic. 
+# ColiSave
+ColiSave is a CRUD web application created using Django for managing and storing information about horses that have experienced colic. It is intended for use in a veterinary clinic. 
 The app is complete with a Machine Learning Model that predicts the outocome of a colic episode with ~80% accuracy.
 
 # Features
